@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Figma Linux</Name>
+        <Homepage>https://github.com/Figma-Linux/figma-linux</Homepage>
+        <Packager>
+            <Name>Prateek SU</Name>
+            <Email>prateekmedia@github.com</Email>
+        </Packager>
+        <Summary>Unofficial Figma desktop client for Linux</Summary>
+        <Description>The collaborative interface design tool. Unofficial Figma desktop client for Linux</Description>
+        <License>MIT</License>
+        <Archive sha1sum="4ebd0889c2abf8c71d050ca681291950828718f2" type="binary">https://github.com/Figma-Linux/figma-linux/releases/download/v0.6.3/figma-linux_0.6.3_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>figma-linux</Name>
+        <Icon>figma-linux</Icon>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>25-10-2020</Date>
+            <Version>0.6.3</Version>
+            <Comment>Add Figma Linux version 0.6.3</Comment>
+            <Name>Prateek SU</Name>
+            <Email>prateekmedia@github.com</Email>
+        </Update>
+    </History>
+</PISI>

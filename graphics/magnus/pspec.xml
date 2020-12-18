@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Magnus</Name>
+        <Homepage>https://kryogenix.org/code/magnus/</Homepage>
+        <Packager>
+            <Name>Prateek SU</Name>
+            <Email>prateekmedia@github.com</Email>
+        </Packager>
+        <Summary>A simple desktop magnifier for Ubuntu and other Linux OSes.</Summary>
+        <Description>Magnus is a very simple desktop magnifier, showing the area around the mouse pointer in a separate window magnified two, three, four, or five times. Useful for users who need magnification, whether to help with eyesight or for accurate graphical design or detail work.</Description>
+        <License>MIT</License>
+        <Archive sha1sum="17d294d953ca0b75d8df54c3031d04a544508d1a" type="binary">http://ftp.br.debian.org/debian/pool/main/m/magnus/magnus_1.0.3-1_all.deb</Archive>
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>magnus</Name>
+        <Icon>magnus</Icon>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>python-setproctitle</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>gobject-introspection-devell</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>17-11-2020</Date>
+            <Version>1.0.3</Version>
+            <Comment>Add Magnus version 1.0.3</Comment>
+            <Name>Prateek SU</Name>
+            <Email>prateekmedia@github.com</Email>
+        </Update>
+    </History>
+</PISI>

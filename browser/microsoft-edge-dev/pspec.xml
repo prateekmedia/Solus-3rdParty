@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Microsoft Edge (dev)</Name>
+        <Homepage>https://www.microsoftedgeinsider.com/en-us/download</Homepage>
+        <Packager>
+            <Name>Prateek SU</Name>
+            <Email>prateekmedia@github.com</Email>
+        </Packager>
+        <Summary>The web browser from Microsoft</Summary>
+        <Description>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier</Description>
+        <License>Proprietary</License>
+        <Archive sha1sum="1cff12453556ed879fc6ca664259101137f42251" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_88.0.673.0-1_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>microsoft-edge-dev</Name>
+        <Icon>microsoft-edge-dev</Icon>
+        <Files>
+            <Path fileType="*">/</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>24-10-2020</Date>
+            <Version>88.0.673.0</Version>
+            <Comment>Add Microsoft Edge Dev version 88.0.673.0</Comment>
+            <Name>Prateek SU</Name>
+            <Email>prateekmedia@github.com</Email>
+        </Update>
+    </History>
+</PISI>

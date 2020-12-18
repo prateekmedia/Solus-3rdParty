@@ -28,10 +28,10 @@
         <RuntimeDependencies>
             <Dependency>libxscrnsaver</Dependency>
             <Dependency>gconf</Dependency>
+            <Dependency>keybinder-devel</Dependency>
             <Dependency>python-setproctitle</Dependency>
-            <Dependency>gobject-introspection</Dependency>
-            <Dependency>gobject-introspection-devell</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
         </RuntimeDependencies>
     </Package>
 

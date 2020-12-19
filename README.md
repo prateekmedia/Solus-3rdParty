@@ -20,7 +20,7 @@ $ sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/prateekmedia/S
 ```
 $ sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/prateekmedia/Solus-3rdParty/main/graphics/figma-linux/pspec.xml && sudo eopkg it figma-linux*.eopkg && sudo rm figma-linux*.eopkg
 ```
-**For Magnus(If this doesn't work then use `kmag` instead):**  
+**For Magnus:**  
 ```
 $ sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/prateekmedia/Solus-3rdParty/main/graphics/magnus/pspec.xml && sudo eopkg it magnus*.eopkg && sudo rm magnus*.eopkg
 ```

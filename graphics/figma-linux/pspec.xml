@@ -11,7 +11,7 @@
         <Summary>Unofficial Figma desktop client for Linux</Summary>
         <Description>The collaborative interface design tool. Unofficial Figma desktop client for Linux</Description>
         <License>MIT</License>
-        <Archive sha1sum="4ebd0889c2abf8c71d050ca681291950828718f2" type="binary">https://github.com/Figma-Linux/figma-linux/releases/download/v0.6.4/figma-linux_0.6.4_amd64.deb</Archive>
+        <Archive sha1sum="9f156c54a3af86235ad7641762b05ff550ab132b" type="binary">https://github.com/Figma-Linux/figma-linux/releases/download/v0.6.4/figma-linux_0.6.4_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>libxscrnsaver</Dependency>
             <Dependency>gconf</Dependency>

@@ -1,16 +1,17 @@
 # 3rdParty Packages for Solus
-### Disclaimer
+## Disclaimer
 These packages are **not official**, they are neither supported nor endorsed by the official Solus devs. Do not ask for help in Solus's help forum, instead create an issue [here](https://github.com/prateekmedia/Solus-3rdParty/issues).
 
-### To install any program from this repo
-```
-$ sudo eopkg bi --ignore-safety ${program pspec.xml  url}
+## Direct .eopkg files(NEW)
+Now you can directly download the compiled .eopkg files from [here](https://github.com/prateekmedia/Solus-3rdParty/releases/latest)
 
-$ sudo eopkg it ${program_name}*.eopkg
-
-$ sudo rm ${program_name}*.eopkg
+To install any program directly from eopkg file, First download the file and then `cd` into that folder like `$ cd ~/Downloads`, After that run  
 ```
-***where ${program_name} = name of the package without spaces like `microsoft-edge-dev` && ${program pspec.xml  url} = url of pspec.xml for that package which look like this `https://raw.githubusercontent.com/prateekmedia/Solus-3rdParty/main/{PATH}/pspec.xml`***
+$ sudo eopkg it ./your-program-name.eopkg
+```
+**NOTE** : Please read the release notes first to know if their are any extra dependencies or not
+
+### Building from Source
 
 **For Microsoft Edge Dev:**  
 ```

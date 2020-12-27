@@ -5,9 +5,13 @@ on:
   workflow_dispatch:
     inputs:
       link:
-        description: 'Link to .deb file to get Sha-1 Checksum of'
+        description: 'Link to .deb file to get Checksum of'
         required: true
         default: ''
+      extension:
+        description: 'File Extension to get Checksum of'
+        required: true
+        default: '.deb'
 
 jobs:
   build:
@@ -22,10 +26,10 @@ jobs:
           args: ${{ github.event.inputs.link }}
         
       - name: SHA-1 Checksum
-        run: sha1sum *.deb
+        run: sha1sum *${{ github.event.inputs.extension }}
         
       - name: MD5 Checksum
-        run: md5sum *.deb
+        run: md5sum *${{ github.event.inputs.extension }}
         
       - name: SHA-256 Checksum
-        run: sha256sum *.deb
+        run: sha256sum *${{ github.event.inputs.extension }}

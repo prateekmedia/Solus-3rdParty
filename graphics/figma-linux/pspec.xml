@@ -11,7 +11,7 @@
         <Summary>Unofficial Figma desktop client for Linux</Summary>
         <Description>The collaborative interface design tool. Unofficial Figma desktop client for Linux</Description>
         <License>MIT</License>
-        <Archive sha1sum="9f156c54a3af86235ad7641762b05ff550ab132b" type="binary">https://github.com/Figma-Linux/figma-linux/releases/download/v0.6.4/figma-linux_0.6.4_amd64.deb</Archive>
+        <Archive sha1sum="738d33b87a012ebd916f556a47ec7e57cb02c6a4" type="binary">https://github.com/Figma-Linux/figma-linux/releases/download/v0.7.1/figma-linux_0.7.1_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>libxscrnsaver</Dependency>
             <Dependency>gconf</Dependency>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>24-01-2021</Date>
+            <Version>0.7.1</Version>
+            <Comment>Update Figma Linux to version 0.7.1</Comment>
+            <Name>Prateek SU</Name>
+            <Email>prateekmedia@github.com</Email>
+        </Update>
         <Update release="2">
             <Date>18-12-2020</Date>
             <Version>0.6.4</Version>

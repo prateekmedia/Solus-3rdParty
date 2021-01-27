@@ -1,4 +1,9 @@
 # 3rdParty Packages for Solus
+
+# Archived
+I am no longer willing to maintain the packages to the latest version as I no longer use them.  
+You can use this as the template of your repo and maintain if you want.
+
 ## Disclaimer
 These packages are **not official**, they are neither supported nor endorsed by the official Solus devs. Do not ask for help in Solus's help forum, instead create an issue [here](https://github.com/prateekmedia/Solus-3rdParty/issues).
 

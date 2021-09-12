@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Fetch file
-        run: curl -L ${{ github.event.inputs.link }}
+        run: curl -OL ${{ github.event.inputs.link }}
         
       - name: SHA-1 Checksum
         run: sha1sum *${{ github.event.inputs.extension }}

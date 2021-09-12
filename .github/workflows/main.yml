@@ -21,9 +21,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Fetch file
-        uses: wei/wget@master
-        with:
-          args: ${{ github.event.inputs.link }}
+        run: curl -L ${{ github.event.inputs.link }}
         
       - name: SHA-1 Checksum
         run: sha1sum *${{ github.event.inputs.extension }}

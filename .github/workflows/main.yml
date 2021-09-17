@@ -1,6 +1,5 @@
 name: Checksum
 
-# Controls when the action will run. 
 on:
   workflow_dispatch:
     inputs:
@@ -18,16 +17,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
       - name: Fetch file
         run: curl -OL ${{ github.event.inputs.link }}
         
-      - name: SHA-1 Checksum
+      - name: SHA-1 checksum
         run: sha1sum *${{ github.event.inputs.extension }}
         
-      - name: MD5 Checksum
+      - name: MD5 checksum
         run: md5sum *${{ github.event.inputs.extension }}
         
-      - name: SHA-256 Checksum
+      - name: SHA-256 checksum
         run: sha256sum *${{ github.event.inputs.extension }}
